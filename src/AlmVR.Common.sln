@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2000
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlmVR.Common.Models", "AlmVR.Common.Models\AlmVR.Common.Models.csproj", "{6030716C-5800-431D-BEDD-7C211A0CB5F9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6030716C-5800-431D-BEDD-7C211A0CB5F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6030716C-5800-431D-BEDD-7C211A0CB5F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6030716C-5800-431D-BEDD-7C211A0CB5F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6030716C-5800-431D-BEDD-7C211A0CB5F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1440A6EA-FA70-4B86-B8CE-A5B1B2B10521}
+	EndGlobalSection
+EndGlobal
