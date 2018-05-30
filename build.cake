@@ -50,7 +50,11 @@ Task("Publish")
 		Source = "https://www.myget.org/F/alm-vr/api/v3/index.json"
 	};
 
-	DotNetCoreNuGetPush($"./build/{configuration}/AlmVR.Common.Models.1.0.1-g076b41e065.nupkg", settings);
+	var nugetPackages = GetFiles($"./build/{configuration}/*.nupkg");
+	foreach (var package in nugetPackages)
+	{
+		DotNetCoreNuGetPush(package.ToString(), settings);
+	}
 });
 
 Task("Publish-Server")
