@@ -1,4 +1,4 @@
-#tool nuget:?package=Nerdbank.GitVersioning
+#tool nuget:?package=Nerdbank.GitVersioning&version=2.1.23
 
 #addin "Cake.Incubator"
 #addin "Cake.Powershell"
