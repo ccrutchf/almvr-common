@@ -37,7 +37,7 @@ Task("Clean")
 Task("Git-Versioning")
 	.Does(() =>
 {
-	version = StartPowershellFile("./tools/Addins/Nerdbank.GitVersioning.2.1.23/tools/Get-Version.ps1")[1].BaseObject;
+	version = StartPowershellFile("./tools/Nerdbank.GitVersioning.2.1.23/tools/Get-Version.ps1")[1].BaseObject;
 
 	Information($"Version number: \"{version.AssemblyInformationalVersion}\".");
 
