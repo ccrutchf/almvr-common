@@ -1,2 +1,2 @@
-# ALM-VR
-[![Build status](https://ci.appveyor.com/api/projects/status/qwags7m1j0rasbxl?svg=true)](https://ci.appveyor.com/project/ccrutchf/alm-vr)
+# AlmVR Common Libraries
+[![Build status](https://ci.appveyor.com/api/projects/status/667xv6tv84ciw3y5?svg=true)](https://ci.appveyor.com/project/ccrutchf/almvr-common)
