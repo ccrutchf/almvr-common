@@ -20,3 +20,15 @@ The server (as well as the remainder of AlmVR) is built using Cake Build run in 
 
 ## Why?
 This package was pulled into its own git repository so that it could be shared between the [client](https://github.com/ccrutchf/almvr-client) and the [server](https://github.com/ccrutchf/almvr-server).  By publishing the package to [AppVeyor's artifacts feed](https://ci.appveyor.com/project/ccrutchf/almvr-common/branch/master/artifacts), NuGet is able to handle downloading and updating the library in both the client and server projects.  During development time, Visual Studio handles this process; during build time, Cake Build is responsible for this via the dotnet CLI.  Both Visual Studio and the dotnet CLI know to find this feed by looking at each project's respective `NuGet.config` file located under the `src` folder.
+
+## Struggles
+* Necessity to share models between server and client - we created this project and pushed it to NuGet so that we had a straightforward way to share the models between the projects without copying code.
+* Location to push the package to - we looked at a few places to push the NuGet package before settling on the artifacts for AppVeyor.
+ 
+## How to build
+The following software is required to build this project:
+* Visual Studio 2017
+* .NET Core 2.1 SDK
+* PowerShell 5.1/PowerShell 6 Core/Bash (minimum one)
+
+Execute the `build.ps1` or `build.sh` file found in the root of the repository.  This builds the Docker container which can then be run.
