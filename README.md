@@ -22,7 +22,6 @@ The common components (as well as the remainder of AlmVR) is built using `Cake B
 **NOTE:** Builds of this project can be run on `Windows` only as `Cake` depends on `PowerShell` to get the version number.
 
 ## Why?
-
 This package was pulled into its own git repository so that it could be shared between the [client](https://github.com/ccrutchf/almvr-client) and the [server](https://github.com/ccrutchf/almvr-server). By publishing the package to [AppVeyor's artifacts feed](https://ci.appveyor.com/project/ccrutchf/almvr-common/branch/master/artifacts), `NuGet` is able to handle downloading and updating the library in both the client and server projects. During development time, Visual Studio handles this process; during build time, `Cake Build` is responsible for this via the `dotnet` CLI. Both Visual Studio and the `dotnet` CLI know to find this feed by looking at each project's respective `NuGet.config` file located under the `src` folder.
 
 ## Struggles
@@ -35,4 +34,4 @@ The following software is required to build this project:
 * .NET Core 2.1 SDK
 * PowerShell 5.1/PowerShell 6 Core/Bash (minimum one)
 
-Execute the build.ps1 or build.sh file found in the root of the repository. This builds the `NuGet` package which can then be installed.
+Execute the `build.ps1` or `build.sh` file found in the root of the repository. This builds the `NuGet` package which can then be installed.
