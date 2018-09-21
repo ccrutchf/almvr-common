@@ -32,6 +32,6 @@ This package was pulled into its own git repository so that it could be shared b
 The following software is required to build this project:
 * Visual Studio 2017
 * .NET Core 2.1 SDK
-* PowerShell 5.1/PowerShell 6 Core/Bash (minimum one)
+* PowerShell 5.1/PowerShell 6 Core (minimum one)
 
 Execute the `build.ps1` or `build.sh` file found in the root of the repository. This builds the `NuGet` package which can then be installed.
