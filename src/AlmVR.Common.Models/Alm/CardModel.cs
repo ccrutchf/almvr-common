@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AlmVR.Common.Models
+namespace AlmVR.Common.Models.Alm
 {
-    public class BoardModel
+    public class CardModel
     {
         public string ID { get; set; }
-        public IEnumerable<SwimLaneModel> SwimLanes { get; set; }
+        public string Name { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AlmVR.Common.Models
+namespace AlmVR.Common.Models.Alm
 {
     public class CardChangedEventArgs : EventArgs
     {
